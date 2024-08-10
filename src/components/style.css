@@ -1,0 +1,63 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }  
+
+.header h1 {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.ct-ls {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+}
+
+.add-contact {
+    display: flex;
+    flex-direction: column;
+}
+.add-contact form label h3 {
+    margin-left: 10px;
+}
+.add-contact form input {
+    margin-left: 10px;
+}
+.btn {
+    display: block;
+    margin: 10px;
+    height: 25px;
+    width: 50px;
+    background-color: rgb(12, 64, 236);
+    color: white;
+}
+
+.contact-card {
+    display: flex;
+    border-bottom: 2px solid gray;
+}
+.contact-card div h3 {
+    margin: 5px;
+}
+.contact-card div img {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+.edit-btn {
+    display: inline;
+}
+.contact-list div {
+    padding: 5px;
+}
+.del-btn {
+    margin: 10px;
+    height: 25px;
+    width: 50px;
+    background-color: red;
+    color: white;
+}
