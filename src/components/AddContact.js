@@ -19,7 +19,6 @@ const AddContact = ({addContactHandler}) => {
         navigate('/');
     }
 
-
     return ( 
         <div className="add-contact">
             <div><h2>Add Contact</h2></div>
