@@ -1,4 +1,5 @@
 import './style.css' ;
+import { Link } from 'react-router-dom';
 import user from '../images/user-logo.png';
 
 const ContactCard = ({contact,getUID}) => {
@@ -11,7 +12,9 @@ const ContactCard = ({contact,getUID}) => {
                 <div>
                     <h3>{contact.name}</h3>
                     <h3>{contact.email}</h3>
-                    <button className="btn edit-btn">Edit</button>
+                    <Link to={`/edit/${contact.id}`}>
+                        <button className="btn edit-btn">Edit</button>
+                    </Link>
                     <button className="del-btn" onClick={() => getUID(contact.id)}>Delete</button>
                 </div>
             </div>
