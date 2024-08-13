@@ -1,7 +1,10 @@
 body, html {
     margin: 0;
     padding: 0;
-  }  
+}
+a {
+    text-decoration: none;
+}
 
 .header h1 {
     width: 100%;
@@ -21,6 +24,9 @@ body, html {
     display: flex;
     flex-direction: column;
 }
+.add-contact h2 {
+    margin-left: 10px;
+}
 .add-contact form label h3 {
     margin-left: 10px;
 }
@@ -34,6 +40,7 @@ body, html {
     width: 50px;
     background-color: rgb(12, 64, 236);
     color: white;
+    cursor: pointer;
 }
 
 .contact-card {
@@ -60,4 +67,5 @@ body, html {
     width: 50px;
     background-color: red;
     color: white;
+    cursor: pointer;
 }
