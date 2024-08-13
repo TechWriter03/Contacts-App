@@ -1,6 +1,6 @@
-import { useNavigate } from 'react-router-dom';
 import './style.css';
 import ContactCard from './ContactCard';
+import { Link } from 'react-router-dom';
 
 const ContactList = ({contacts,deleteContactHandler}) => {
     
@@ -14,16 +14,13 @@ const ContactList = ({contacts,deleteContactHandler}) => {
         )
     })
 
-    const navigate=useNavigate();
-    const add = () => {
-        navigate('/add');
-    }
-
     return (
         <div className='contact-list'>
             <div className='ct-ls'>
                 <h2>Contact List</h2>
-                <button className='btn' onClick={add}>Add</button>
+                <Link to='/add'>
+                    <button className='btn'>Add</button>
+                </Link>
             </div>
             {renderContactList}
         </div>
